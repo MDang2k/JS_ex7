@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JS Exercise 7</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container my-4">
+        <div class="d-flex">
+            <input type="text" class="form-control" name="" id="iptNumber" placeholder="Add a number">
+            <button class="btn btn-success" id="btnAddNum">Enter</button>
+        </div>
+
+        <div class="alert alert-success my-2" role="alert">
+            <span id="txtArray"></span>
+        </div>
+
+        <!-- bài 1 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnSumPositive" type="button">1. Sum of positive numbers</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtSumPositive"></span>
+            </div>
+        </form>
+
+        <!-- bài 2 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnCountPositive" type="button">2. Counting positive numbers</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtCountPositive"></span>
+            </div>
+        </form>
+
+        <!-- bài 3 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnMin" type="button">3. Minimum number</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtMin"></span>
+            </div>
+        </form>
+
+        <!-- bài 4 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnMinPositive" type="button">4. Minimum positive number</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtMinPositive"></span>
+            </div>
+        </form>
+
+        <!-- bài 5 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnLastEvenNumber" type="button">5. Last even number</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtLastEvenNumber"></span>
+            </div>
+        </form>
+
+        <!-- bài 6 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <div class="d-flex my-4">
+                    <input type="text" class="form-control" name="" id="firstPos" placeholder="Enter First Position">
+                    <input type="text" class="form-control" name="" id="secondPos" placeholder="Enter Second Postition">
+                </div>
+                <button class="btn btn-primary me-1 mb-1" id="btnSwapPosition" type="button">6. Swap position</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtSwapPosition"></span>
+            </div>
+        </form>
+
+        <!-- bài 7 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnAscSort" type="button">7. Ascending Sort</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtAscSort"></span>
+            </div>
+        </form>
+
+        <!-- bài 8 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnFirstPrimeNum" type="button">8. Find the first prime number</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtFirstPrimeNum"></span>
+            </div>
+        </form>
+
+        <!-- bài 9 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnCountPrime" type="button">9. Count prime numbers</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtCountPrime"></span>
+            </div>
+        </form>
+
+        <!-- bài 10 -->
+        <form class="row gy-3 align-items-center px-2 border p-3">
+            <div class="col-12">
+                <button class="btn btn-primary me-1 mb-1" id="btnCompare" type="button">10. Positive and negative numbers coparision</button>
+            </div>
+            <div class="alert alert-success my-2" role="alert">
+                <span id="txtCompare"></span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- my JS  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
